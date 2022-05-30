@@ -51,7 +51,7 @@ COPY . .
 
 # Run quality control
 RUN go test ./... -test.v -race -test.coverprofile=atomic .
-RUN golangci-lint run .
+#RUN golangci-lint run .
 
 # Compile imaginary
 RUN go build -a \
